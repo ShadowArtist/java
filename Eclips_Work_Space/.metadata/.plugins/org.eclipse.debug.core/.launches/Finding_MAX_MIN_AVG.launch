@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Using_GUI_Find_MAX_MIN_AVERAGE/src/Finding_MAX_MIN_AVG.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Finding_MAX_MIN_AVG"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Using_GUI_Find_MAX_MIN_AVERAGE"/>
+</launchConfiguration>

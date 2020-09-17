@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Interface_Experiment_with_static_in_main_Method&apos; to &apos;Interface_Experiment_with_static_removed_In_main_Method&apos;" description="Rename resource &apos;Interface_Experiment_with_static_in_main_Method&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Interface_Experiment_with_static_in_main_Method" name="Interface_Experiment_with_static_removed_In_main_Method" stamp="1597683505192" updateReferences="true"/>
+</session>

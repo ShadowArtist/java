@@ -1,0 +1,49 @@
+package abstractionTuotorial;
+
+
+
+abstract class DogCharacterstics
+{
+
+	void Bark()
+	{
+		System.out.println("BArk");
+	}
+	
+	abstract void DogsIntellect();
+
+}
+
+
+
+class Dog1 extends DogCharacterstics
+{
+	
+	void DogsIntellect() 
+	{
+          System.out.println("  intellect 90 %  ");		
+	}
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+public class abstractionTuotorial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

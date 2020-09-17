@@ -1,0 +1,19 @@
+//student has a adress with weak relationship(Association) known as Aggregation
+
+class Address
+
+{
+	
+}
+
+
+
+
+public class Aggregation_Test_Run {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

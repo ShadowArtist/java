@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/OOP_Paper_Q2_Using_Return_Types_and_Without_builtin_Methods_Like_max_celing_minimum_absolute/src/Test.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Test"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="OOP_Paper_Q2_Using_Return_Types_and_Without_builtin_Methods_Like_max_celing_minimum_absolute"/>
+</launchConfiguration>

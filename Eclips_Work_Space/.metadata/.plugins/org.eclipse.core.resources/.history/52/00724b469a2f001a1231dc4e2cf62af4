@@ -1,0 +1,236 @@
+import java.io.PrintStream;
+
+import javax.print.attribute.standard.PrinterName;
+
+public class String_Ultimate_Challange {
+	
+static	int count =0;
+static int counter_for_vowels;
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	String sentence = "A Quick Brown Fox Jumps Over The lazzy Dog !";
+	
+	// Finding Capital Alphabet
+	
+	System.out.println("These are capital letters in our sentence");
+		for(int i=0 ; i<sentence.length();i++) {
+			
+			/*Character
+			 
+			  
+			  
+			  
+			 * The Character class wraps a value of 
+			 * the primitive type char in an object. 
+			 * An object of class Character contains a single 
+			 * field whose type is char. 
+In addition, this class provides a large number
+ of static methods fordetermining a character's
+  category (lowercase letter, digit, etc.)and for 
+  converting characters from uppercase to lowercase and viceversa. 
+*/
+			
+			
+		
+			/*
+			  
+			 * isUpperCase
+			  
+			  
+			  
+			  
+public static boolean isUpperCase(char ch)
+
+Determines if the specified character is an uppercase character. 
+A character is uppercase if its general category type, provided by Character.getType(ch), is UPPERCASE_LETTER.or it has contributory property Other_Uppercase as defined by the Unicode Standard. 
+
+The following are examples of uppercase characters: 
+
+ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
+
+			
+			 * */
+			
+			
+			
+		
+			
+			
+			/*
+			 charAt
+public char charAt(int index)
+
+Returns the char value at thespecified index. An index ranges from 0 to length() - 1.
+The first char value of the sequence is 
+at index 0, the next at index 1,and so on, as for array indexing. 
+
+If the char value specified by the index is a surrogate, the surrogate
+value 
+is returned.
+Specified by:charAt in interface CharSequenceParameters:index - the index of the char value.Returns:the char value at the specified index of this string.The first char value is at index 0.
+			  
+			 * 
+			 * 
+			  
+			 
+			 *
+			 * 
+			 * */
+			
+			
+			
+			
+			if(Character.isUpperCase(sentence.charAt(i)    )) 
+			{
+				System.out.print(sentence.charAt(i));
+			}
+			
+		}
+	
+	// just printing new line here
+		System.out.println("  ");
+		System.out.println("  ");
+	
+		
+		//Now Finding Lower Case
+		System.out.println("These Are small letters in our String ");
+		
+		
+		
+for(int i=0 ; i<sentence.length();i++) {
+			
+			/*Character
+			 
+			  
+			  
+			  
+			 * The Character class wraps a value of 
+			 * the primitive type char in an object. 
+			 * An object of class Character contains a single 
+			 * field whose type is char. 
+In addition, this class provides a large number
+ of static methods fordetermining a character's
+  category (lowercase letter, digit, etc.)and for 
+  converting characters from uppercase to lowercase and viceversa. 
+*/
+			
+			
+		
+			/*
+			  
+			 * isLowerCase
+			 
+			 
+			 
+public static boolean isLowerCase(char ch)
+
+Determines if the specified character is a lowercase character. 
+A character is lowercase if its general category type, providedby Character.getType(ch), is LOWERCASE_LETTER, or it has contributory propertyOther_Lowercase as defined by the Unicode Standard. 
+
+The following are examples of lowercase characters: 
+
+ a b c d e f g h i j k l m n o p q r s t u v w x y z
+
+
+
+			
+			 * */
+			
+			
+			
+		
+			
+			
+			/*
+			 charAt
+public char charAt(int index)
+
+Returns the char value at the specified index. An index ranges from 0 to length() - 1.
+The first char value of the sequence is 
+at index 0, the next at index 1,and so on, as for array indexing. 
+
+If the char value specified by the index is a surrogate, the surrogate
+value 
+is returned.
+Specified by:charAt in interface CharSequenceParameters:index - the index of the char value.Returns:the char value at the specified index of this string.The first char value is at index 0.
+			  
+			 * 
+			 * 
+			  
+			 
+			 *
+			 * 
+			 * */
+			
+			
+			
+			
+			if(Character.isLowerCase(sentence.charAt(i)    )) 
+			{
+				System.out.print(sentence.charAt(i));
+			}
+			
+		}
+// Printing Spaces
+		System.out.println("  ");
+		System.out.println("  ");
+		
+		
+		// finding total count
+		
+	
+	for(int i=0;i<sentence.length();i++)
+	{
+		
+		if(Character.isUpperCase(sentence.charAt(i)  ) ||  Character.isLowerCase(sentence.charAt(i))  ) 
+		{
+			count++;
+			
+		}
+		
+		
+	}
+	System.out.println("Total number of letters are  "+count);
+	
+	// Printing Spaces
+			System.out.println("  ");
+			System.out.println("  ");
+			
+			
+			
+	//Now Finding Vowels		
+		
+			
+			
+		for(int i =0 ; i<sentence.length() ; i++)
+			
+		{
+			
+			// we can replace else if by OR 
+if(sentence.contains("a" ) || sentence.contains("e" ) || sentence.contains("i" ) || sentence.contains("o" ) || sentence.contains("u" )   )
+				
+			{
+				
+				System.out.println(  String.valueOf(i)   );
+				
+			}
+			
+			
+			
+			
+			counter_for_vowels++;
+			
+			
+			
+		}
+		
+		System.out.println(" Number Of vowels present in "+counter_for_vowels);
+			
+			
+	
+	}
+
+}

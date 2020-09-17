@@ -1,0 +1,48 @@
+
+public class OverLoader {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+		
+		
+		
+		OverLoaderChild1./*when i applied static in child class then i
+		 was able to access child class here without creating an Object*/
+	}
+
+}
+
+class OverLoaderParent{
+	
+	
+	public static/*when you will apply static keyword here you will be able to access this in main class without creating an object in main class */ int add(int a, int b) {
+		
+		return a+b;
+	}
+	
+	
+}
+
+
+
+class OverLoaderChild1{
+	
+	public static/*when you will apply static keyword here you will be able to access this in main class without creating an object in main class */ int add( int a ,int b , int c) {
+		
+		
+		return a+b+c;
+	}	
+}
+
+
+
+class OverLoaderChild2{
+	
+	public static /*when you will apply static keyword here you will be able to access this in main class without creating an object in main class */ int add(  int a , int b , int c , int d   ) {
+		
+		return a+b+c+d;
+	}
+	
+}

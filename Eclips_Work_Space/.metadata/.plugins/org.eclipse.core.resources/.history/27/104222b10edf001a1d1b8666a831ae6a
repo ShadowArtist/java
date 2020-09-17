@@ -1,0 +1,80 @@
+package abstractionTuotorial;
+
+
+
+abstract class DogCharacterstics
+{
+
+	
+	// characterstics that are same , are in void 
+	void Bark()
+	{
+		System.out.println("BArk");
+	}
+	
+	
+	// characterstics that are not same comes with abstract keyword 
+	// we know it has that characterstics, but but how much / which one / what is the quantity that we dont know
+	
+	abstract void DogsIntellect();
+
+}
+
+
+
+class Dog1 extends DogCharacterstics
+{
+	
+	void DogsIntellect() 
+	{
+          System.out.println(" Dog one  intellect =  90 %  ");		
+	}
+	
+	
+	
+	
+}
+
+
+
+
+
+
+class Dog2 extends DogCharacterstics
+{
+	
+	void DogsIntellect() 
+	
+	{
+          System.out.println(" Dog two  intellect 80 %  ");		
+	}
+	
+	
+	
+	
+}
+
+
+
+
+public class abstractionTuotorial {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Dog1  dog_1_characterstics = new Dog1();
+	
+		dog_1_characterstics.Bark();
+		dog_1_characterstics.DogsIntellect();
+		
+		
+		
+		Dog2 dog_2_characterstics = new Dog2();
+		
+		
+		dog_2_characterstics.Bark();
+		dog_2_characterstics.DogsIntellect();
+	}
+
+}

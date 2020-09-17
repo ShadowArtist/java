@@ -1,0 +1,16 @@
+
+public class Production {
+
+	String title;
+	String director;
+	String writer;
+	
+	public Production() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Production(String t,String d,String w) {
+		// TODO Auto-generated constructor stub
+	}
+	
+}

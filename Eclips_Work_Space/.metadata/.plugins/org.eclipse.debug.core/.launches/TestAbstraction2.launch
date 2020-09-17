@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Abstraction_Abstract_class_having_constructor_datamembers_and_methods/src/TestAbstraction2.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="TestAbstraction2"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Abstraction_Abstract_class_having_constructor_datamembers_and_methods"/>
+</launchConfiguration>

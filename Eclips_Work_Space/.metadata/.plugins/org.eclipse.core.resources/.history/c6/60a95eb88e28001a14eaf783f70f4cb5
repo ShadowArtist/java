@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class THINGS_TESTER {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner input = new Scanner(System.in);
+	
+int i = input.nextInt();
+double d = input.nextDouble();
+input.nextLine();
+String s = input.nextLine();
+// Write your code here.
+
+System.out.println("String: " + s);
+System.out.println("Double: " + d);
+System.out.println("Int: " + i);
+	
+	}
+
+}

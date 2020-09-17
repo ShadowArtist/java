@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;&apos; to &apos;Shirt.Shirt(...)&apos;&#x0D;&#x0A;- Original project: &apos;Constructors_Practice&apos;&#x0D;&#x0A;- Destination element: &apos;Shirt.Shirt(...)&apos;&#x0D;&#x0A;- Original element: &apos;Shirt.Shirt(...)&apos;" description="Copy method" destination="/src&lt;{Main.java[Shirt~Shirt~QString;~C" element1="/src&lt;{Main.java[Shirt~Shirt~QString;~C" flags="589830" id="org.eclipse.jdt.ui.copy" members="1" policy="org.eclipse.jdt.ui.copyMembers" stamp="1574452771474" version="1.0"/>
+</session>

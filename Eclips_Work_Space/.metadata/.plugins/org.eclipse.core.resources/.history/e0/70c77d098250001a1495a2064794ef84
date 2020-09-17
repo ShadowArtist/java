@@ -1,0 +1,68 @@
+//student has a adress with weak relationship(Association) known as Aggregation
+
+class Address
+
+{
+String street_Num;
+String city;
+String state;
+String country;
+
+
+public Address (String s_num, String ci , String st, String co) 
+{
+	
+street_Num=s_num;
+
+city=ci;
+
+state = st;
+
+country=co;
+	
+	
+}
+
+
+}
+
+
+
+class Student 
+{
+	// Student has a address with weak relationship(association)  as  aggregation .
+	
+	String roll_number;
+	
+	String student_name;
+	
+	Address student_addr;
+	
+	
+	
+	public Student()
+	{
+		
+		
+	}
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+public class Aggregation_Test_Run {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

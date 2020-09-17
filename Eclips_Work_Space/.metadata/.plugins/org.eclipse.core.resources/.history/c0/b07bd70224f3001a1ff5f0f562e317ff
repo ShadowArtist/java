@@ -1,0 +1,71 @@
+import java.util.Scanner;
+
+public class test {
+
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		Scanner input = new Scanner(System.in);	
+		
+		
+		
+		
+		System.out.println(" Add appetizer");
+		
+		String appetizer=input.next();
+		
+		System.out.println("Add main course");
+		String main_course=input.next();
+		
+		System.out.println("Add dessert");
+		String dessert=input.next();
+		
+		
+		
+		
+		
+		if(appetizer.equals(appetizer)  && main_course.equals(main_course) && dessert.equals(dessert)   ) 
+		{
+			
+		System.out.println("---------------------------------");	
+		
+		System.out.println("Welcome to The SSUET Canteen Meal Selector");
+		
+		
+		//just to create space 
+		
+		System.out.println();
+		
+		
+			System.out.println(" Your apitizer  "+  appetizer);
+			
+			System.out.println();
+			
+			System.out.println(" Your main course"+  main_course);
+			
+			System.out.println();
+			
+			System.out.println(" Your dessert "+dessert);
+			
+			
+		}
+		
+		System.out.println("   Would you like to exit the program now   ");
+		String Exit=input.next();
+		
+		
+		
+		
+		if(Exit.equals("exit") ) 
+		{
+			System.out.println("exiting from program");
+		} 
+		
+		
+		
+	}
+
+}

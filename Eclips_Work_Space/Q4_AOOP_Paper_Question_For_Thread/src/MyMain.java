@@ -1,0 +1,225 @@
+import java.sql.Time;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+import javax.swing.plaf.SliderUI;
+
+//https://www.java2novice.com/java_thread_examples/implementing_runnable/
+
+
+/*
+ 
+  
+  Help taken Form for Date class
+   https://mkyong.com/java/java-how-to-get-current-date-time-date-and-calender/
+  
+ * */
+
+
+/*
+ How to create a thread using Runnable interface
+  
+  
+  Guide taken from 
+  https://www.javatpoint.com/runnable-interface-in-java
+  
+  
+  
+  
+  
+  
+  Implementing Runnable
+  
+It is the easiest way to create a thread by implementing Runnable.
+ One can create a thread on any object by implementing Runnable. To implement a Runnable, 
+ one has only to implement the run method.
+
+public void run()
+
+In this method, we have the code which we want to execute on a concurrent thread. In this method, 
+we can use variables, instantiate classes, and perform an action like the same way the main thread does.
+ The thread remains until the return of this method. The run method establishes an entry point to a new thread.
+
+How to create a thread using Runnable interface
+To create a thread using runnable, use the following code-
+
+Runnable runnable = new MyRunnable();    
+  
+Thread thread = new Thread(runnable);  
+thread.start();  
+The thread will execute the code which is mentioned in the run() method of the Runnable object passed in its argument.
+  
+  
+  
+ * */
+
+
+
+
+class DateThread implements Runnable
+
+{
+	
+
+	/*DateFormat dateFormat = new SimpleDateFormat("yyy/MM/dd HH:mm:ss");
+
+public static	Date date = new Date();*/
+	
+public static int count=0;	
+	// constructor bnaya
+	public DateThread() {}
+	
+	public void run() 
+	
+	{
+
+		while (DateThread.count <10) {
+			
+			
+			
+		try {
+			// incrementing our counter
+			
+			
+			
+			DateFormat dateFormat = new SimpleDateFormat("yyy/MM/dd HH:mm:ss");
+
+			// run k ander 3 object initialize kr wye
+			
+			Date date1 = new Date();
+			System.out.println(  "Printing Date instance 1 "  +dateFormat.format(date1));
+			++DateThread.count;
+			
+			
+			/*Date date2 = new Date();
+			System.out.println(  "Printing Date instance 2 "  +dateFormat.format(date2));
+			++DateThread.count;
+			
+			Date date3 = new Date();
+			System.out.println(  "Printing Date instance 3 "  +dateFormat.format(date3));
+			++DateThread.count;
+			*/
+			
+			Thread.sleep(100);
+		}
+		
+		catch (InterruptedException e) {
+			// TODO: handle exception
+		}
+		
+		
+		
+		}
+		
+			
+	}
+	
+	
+
+	
+	
+	/*public void FORMATING_date()
+	{
+
+		DateFormat dateFormat = new SimpleDateFormat("yyy/MM/dd HH:mm:ss");
+
+		Date date = new Date();
+		
+		System.out.println(dateFormat.format(date));
+		
+		
+		
+		
+		
+	}
+	*/
+
+
+}
+
+
+
+
+public class MyMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		System.out.println(" STARTING OUR THREAD ");
+		
+		DateThread dt = new DateThread();
+		
+		Thread instance_1 = new Thread(dt);
+		System.out.println("INSTANCE 1 IS RUNNING");
+		instance_1.start();
+		
+		
+		
+		try {
+			instance_1.sleep(100);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+DateThread dd = new DateThread();
+		
+		Thread instance_2 = new Thread(dd);
+		System.out.println("INSTANCE 2 IS RUNNING");
+		instance_2.start();
+		
+		
+		try {
+			instance_2.sleep(100);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+DateThread dq = new DateThread();
+		
+		Thread instance_3 = new Thread(dq);
+		System.out.println("INSTANCE 3 IS RUNNING");
+		instance_3.start();
+		
+		
+		try {
+			instance_3.sleep(100);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		
+	// 3 instance 10 bar print nai  ho pa rahe hain 	
+		
+		
+		/*
+		
+		
+		
+		DateThread dd = new DateThread();
+		Thread instance_2 = new Thread(dd);
+		System.out.println("INSTANCE 2 IS RUNNING");
+		instance_2.start();
+		
+		
+		
+		DateThread dq = new DateThread();
+		Thread instance_3 = new Thread(dq);
+		System.out.println("INSTANCE 3 IS RUNNING");
+		instance_3.start();
+		*/
+		
+	}
+
+}

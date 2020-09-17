@@ -1,0 +1,80 @@
+package TicTacToe;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import java.awt.BorderLayout;
+import javax.swing.JPanel;
+import javax.swing.border.BevelBorder;
+import javax.swing.border.LineBorder;
+import java.awt.Color;
+import java.awt.GridLayout;
+import javax.swing.JLabel;
+
+public class TicTacToe {
+
+	private JFrame frame;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					TicTacToe window = new TicTacToe();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public TicTacToe() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 1200, 600);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(new BorderLayout(0, 0));
+		
+		JPanel panel = new JPanel();
+		panel.setBorder(new LineBorder(new Color(0, 0, 0), 4));
+		frame.getContentPane().add(panel, BorderLayout.CENTER);
+		panel.setLayout(new GridLayout(3, 5, 2, 2));
+		
+		JLabel lblNewLabel_1 = new JLabel("New label");
+		panel.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_3 = new JLabel("New label");
+		panel.add(lblNewLabel_3);
+		
+		JLabel lblNewLabel_2 = new JLabel("New label");
+		panel.add(lblNewLabel_2);
+		
+		JLabel lblNewLabel_4 = new JLabel("New label");
+		panel.add(lblNewLabel_4);
+		
+		JLabel lblNewLabel_6 = new JLabel("New label");
+		panel.add(lblNewLabel_6);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		panel.add(lblNewLabel);
+		
+		JLabel lblNewLabel_5 = new JLabel("New label");
+		panel.add(lblNewLabel_5);
+		
+		JLabel lblNewLabel_7 = new JLabel("New label");
+		panel.add(lblNewLabel_7);
+	}
+
+}

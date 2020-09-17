@@ -1,0 +1,9 @@
+
+public class Production {
+
+	String title;
+	String director;
+	String writer;
+	
+	
+}

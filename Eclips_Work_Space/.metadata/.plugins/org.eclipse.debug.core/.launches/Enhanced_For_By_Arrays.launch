@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Practicing_Enhanced_For_with_Arrays/src/Enhanced_For_By_Arrays.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Enhanced_For_By_Arrays"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Practicing_Enhanced_For_with_Arrays"/>
+</launchConfiguration>

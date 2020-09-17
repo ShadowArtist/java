@@ -1,0 +1,6 @@
+
+public class Film extends Production{
+	
+	int boxOfficeGross;
+
+}

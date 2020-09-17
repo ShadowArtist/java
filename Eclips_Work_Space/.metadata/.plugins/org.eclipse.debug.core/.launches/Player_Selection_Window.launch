@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Tic_Tac_Toe_InGUI_Retry/src/Player_Selection_Window.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="Player_Selection_Window"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="Tic_Tac_Toe_InGUI_Retry"/>
+</launchConfiguration>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/COUNTING_ANYTHING_HOW_MANY_THEY_ARE/src/COUNTING_PROGRAM.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="COUNTING_PROGRAM"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="COUNTING_ANYTHING_HOW_MANY_THEY_ARE"/>
+</launchConfiguration>

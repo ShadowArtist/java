@@ -1,0 +1,30 @@
+
+public class Arrar_And_For_Loop_Combination {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+
+	int rollNumber[]= {1,3,8};
+	
+	for (int i = 0; i < rollNumber.length/* 3 element mojude hain array ka ander to 
+	array ke length ke value 3 ho ge */; i++) {
+		System.out.println(rollNumber[i]  /* this is saying grades present on
+		 the respective index number of an array */  );
+	
+	if(rollNumber[i] % 2 ==0) 
+	{
+		System.out.println(rollNumber[i]+" is even  ");
+	}
+	else
+	{
+		System.out.println(rollNumber[i]+" is Odd  ");
+	}
+	
+	}
+	
+	
+	
+	}
+
+}
