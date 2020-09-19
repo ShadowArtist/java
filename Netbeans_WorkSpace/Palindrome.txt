@@ -1,0 +1,36 @@
+import java.util.*;
+
+
+public class palindrome {
+
+	
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input =new Scanner(System.in);
+		
+		
+		
+		StringBuffer output =new StringBuffer();
+		
+		
+		
+		
+		
+		System.out.println("Enter Your Word : ");
+		
+		String Orignal_Word=input.next();
+		
+		System.out.println("Your Word Is : "+Orignal_Word);
+		
+		
+		
+		output.append(Orignal_Word);
+		
+		output.reverse();
+		
+		System.out.println("output  : "+output);
+	}
+
+}

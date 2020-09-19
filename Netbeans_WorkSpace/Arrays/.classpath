@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Array1/src"/>
+	<classpathentry kind="src" path="ArrayApplications/src"/>
+	<classpathentry kind="src" path="ArraysMorePractice/src"/>
+	<classpathentry kind="src" path="Finding_Geratest_Number_InArray_Using_INtegir_Datatype/src"/>
+	<classpathentry kind="src" path="Finding_Gratest_NUmber_InArray/src"/>
+	<classpathentry kind="src" path="Practicing_Nested_If/src"/>
+	<classpathentry kind="lib" path="Array1/dist/Array1.jar"/>
+	<classpathentry kind="lib" path="Practicing_Nested_If/dist/Practicing_Nested_If.jar"/>
+	<classpathentry kind="output" path="Array1/build/classes"/>
+</classpath>

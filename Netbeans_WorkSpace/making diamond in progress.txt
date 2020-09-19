@@ -1,0 +1,91 @@
+package makingdiamond_by_nested_for_loop;
+
+/**
+ *
+ * @author RehanUsmani
+ */
+public class MakingDiamond_BY_Nested_For_loop {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+   
+     for(int i=0;i<=5;i++) {
+			
+			
+			
+			
+			System.out.println();
+			
+			
+			
+			for(int j=1;j<=i;j++) {
+				
+				System.out.print("*");
+				
+			
+                                
+                               
+                                
+                                
+                                
+			}
+		
+                    
+                        
+                         for(int a=5;a>=i;a--){
+                                System.out.print("*");
+                                }
+                    
+                        
+                        
+		}
+		
+		
+		
+		
+		// we put gap here because we needed to seperate  column of j from row of k
+		 System.out.println();
+		
+		
+		 
+		 
+		 
+		 
+		 
+		 for(int k=4;k>=1;k--) {
+			
+		       for(int l=1;l<=k;l++) {
+		    	  
+						System.out.print("*");
+						 
+					}
+		       
+		       System.out.println();
+		       
+			
+                
+                   
+                       
+               
+                       
+                  for(int b=5;b>=0;b--){
+                                System.out.print("*");
+                                
+                  
+           
+                  }
+                 
+                 
+                 }
+		
+		
+		
+		
+		
+	}
+    
+    
+    }

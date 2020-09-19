@@ -1,0 +1,474 @@
+package workspacesound;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.sound.sampled.AudioInputStream;
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.io.File;
+import java.awt.event.ActionEvent;
+import java.awt.Color;
+import javax.swing.UIManager;
+import java.awt.SystemColor;
+
+public class piano {
+
+	private JFrame frame;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					piano window = new piano();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public piano() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 595, 415);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		JButton btnButton1Black = new JButton("New button");
+		btnButton1Black.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				
+				
+				// try stared from here 
+				
+				try {
+				AudioInputStream input  = AudioSystem.
+						getAudioInputStream(new File("C:\\Users\\administrator.ARENA\\Desktop\\Music_Note\\B.wav"));
+				//Clip is they Audio Type
+				Clip c = AudioSystem.getClip();
+				c.open(input);
+				c.start();
+				
+				} // try ended here 
+				
+				
+				
+				
+				// Exception handeling or runtime handeling is Exception
+				//Ama ka marna pa jo awaz ate ha wo Exception  keha la te ha likn agr ama ko aur kut lgane ho to catch lgata hain 
+				
+				catch(Exception ee /*this ee is the variable of Exception */) 
+				
+				 
+				
+				{    //catch started from here
+					
+					// program chlte hua jo msla aye ausa  exception kehta hain
+					//santax main error aye to wo eror kehtala ha 
+					
+				}    // catch ended here  
+				
+				
+				
+			}
+			
+		});
+		
+		
+		btnButton1Black.setForeground(Color.BLACK);
+		btnButton1Black.setBackground(Color.BLACK);
+		btnButton1Black.setBounds(10, 30, 33, 187);
+		frame.getContentPane().add(btnButton1Black);
+		
+		JButton btnButton2Black = new JButton("New button");
+		btnButton2Black.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			
+// try stared from here 
+				
+				try {
+				AudioInputStream input  = AudioSystem.getAudioInputStream(new File("C:\\Users\\administrator.ARENA\\Desktop\\Music_Note\\A.wav"));
+				//Clip is they Audio Type
+				Clip c = AudioSystem.getClip();
+				c.open(input);
+				c.start();
+				
+				} // try ended here 
+				
+				
+				
+				
+				// Exception handeling or runtime handeling is Exception
+				//Ama ka marna pa jo awaz ate ha wo Exception  keha la te ha likn agr ama ko aur kut lgane ho to catch lgata hain 
+				
+				catch(Exception ee /*this ee is the variable of Exception */) 
+				
+				 
+				
+				{    //catch started from here
+					
+					// program chlte hua jo msla aye ausa  exception kehta hain
+					//santax main error aye to wo eror kehtala ha 
+					
+				}    // catch ended here 
+			
+			}
+		});
+		btnButton2Black.setBackground(Color.BLACK);
+		btnButton2Black.setForeground(Color.BLACK);
+		btnButton2Black.setBounds(53, 30, 33, 187);
+		frame.getContentPane().add(btnButton2Black);
+		
+		JButton btnButton3Black = new JButton("New button");
+		btnButton3Black.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			
+// try stared from here 
+				
+				try {
+				AudioInputStream input  = AudioSystem.
+						getAudioInputStream(new File("C:\\Users\\administrator.ARENA\\Desktop\\Music_Note\\C.wav"));
+				//Clip is they Audio Type
+				Clip c = AudioSystem.getClip();
+				c.open(input);
+				c.start();
+				
+				} // try ended here 
+				
+				
+				
+				
+				// Exception handeling or runtime handeling is Exception
+				//Ama ka marna pa jo awaz ate ha wo Exception  keha la te ha likn agr ama ko aur kut lgane ho to catch lgata hain 
+				
+				catch(Exception ee /*this ee is the variable of Exception */) 
+				
+				 
+				
+				{    //catch started from here
+					
+					// program chlte hua jo msla aye ausa  exception kehta hain
+					//santax main error aye to wo eror kehtala ha 
+					
+				}    // catch ended here 
+			
+			}
+		});
+		btnButton3Black.setBackground(Color.BLACK);
+		btnButton3Black.setBounds(146, 30, 33, 187);
+		frame.getContentPane().add(btnButton3Black);
+		
+		JButton btnButton4Black = new JButton("New button");
+		btnButton4Black.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+// try stared from here 
+				
+				try {
+				AudioInputStream input  = AudioSystem.
+						getAudioInputStream(new File("C:\\Users\\administrator.ARENA\\Desktop\\Music_Note\\D.wav"));
+				//Clip is they Audio Type
+				Clip c = AudioSystem.getClip();
+				c.open(input);
+				c.start();
+				
+				} // try ended here 
+				
+				
+				
+				
+				// Exception handeling or runtime handeling is Exception
+				//Ama ka marna pa jo awaz ate ha wo Exception  keha la te ha likn agr ama ko aur kut lgane ho to catch lgata hain 
+				
+				catch(Exception ee /*this ee is the variable of Exception */) 
+				
+				 
+				
+				{    //catch started from here
+					
+					// program chlte hua jo msla aye ausa  exception kehta hain
+					//santax main error aye to wo eror kehtala ha 
+					
+				}    // catch ended here 
+			
+			
+			}
+		});
+		btnButton4Black.setBackground(Color.BLACK);
+		btnButton4Black.setBounds(189, 30, 33, 187);
+		frame.getContentPane().add(btnButton4Black);
+		
+		JButton btnButton5Black = new JButton("New button");
+		btnButton5Black.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			
+// try stared from here 
+				
+				try {
+				AudioInputStream input  = AudioSystem.
+						getAudioInputStream(new File("C:\\Users\\administrator.ARENA\\Desktop\\Music_Note\\E.wav"));
+				//Clip is they Audio Type
+				Clip c = AudioSystem.getClip();
+				c.open(input);
+				c.start();
+				
+				} // try ended here 
+				
+				
+				
+				
+				// Exception handeling or runtime handeling is Exception
+				//Ama ka marna pa jo awaz ate ha wo Exception  keha la te ha likn agr ama ko aur kut lgane ho to catch lgata hain 
+				
+				catch(Exception ee /*this ee is the variable of Exception */) 
+				
+				 
+				
+				{    //catch started from here
+					
+					// program chlte hua jo msla aye ausa  exception kehta hain
+					//santax main error aye to wo eror kehtala ha 
+					
+				}    // catch ended here 
+			
+			}
+		});
+		btnButton5Black.setBackground(Color.BLACK);
+		btnButton5Black.setBounds(232, 30, 33, 187);
+		frame.getContentPane().add(btnButton5Black);
+		
+		JButton btnButton6Black = new JButton("New button");
+		btnButton6Black.setBackground(Color.BLACK);
+		btnButton6Black.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			
+			
+// try stared from here 
+				
+				try {
+				AudioInputStream input  = AudioSystem.
+						getAudioInputStream(new File("C:\\Users\\administrator.ARENA\\Desktop\\Music_Note\\F.wav"));
+				//Clip is they Audio Type
+				Clip c = AudioSystem.getClip();
+				c.open(input);
+				c.start();
+				
+				} // try ended here 
+				
+				
+				
+				
+				// Exception handeling or runtime handeling is Exception
+				//Ama ka marna pa jo awaz ate ha wo Exception  keha la te ha likn agr ama ko aur kut lgane ho to catch lgata hain 
+				
+				catch(Exception ee /*this ee is the variable of Exception */) 
+				
+				 
+				
+				{    //catch started from here
+					
+					// program chlte hua jo msla aye ausa  exception kehta hain
+					//santax main error aye to wo eror kehtala ha 
+					
+				} 
+			
+			
+			
+			}
+		});
+		btnButton6Black.setBounds(316, 30, 33, 187);
+		frame.getContentPane().add(btnButton6Black);
+		
+		JButton btnButton7Black = new JButton("New button");
+		btnButton7Black.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			
+// try stared from here 
+				
+				try {
+				AudioInputStream input  = AudioSystem.
+						getAudioInputStream(new File("C:\\Users\\administrator.ARENA\\Desktop\\Music_Note\\G.wav"));
+				//Clip is they Audio Type
+				Clip c = AudioSystem.getClip();
+				c.open(input);
+				c.start();
+				
+				} // try ended here 
+				
+				
+				
+				
+				// Exception handeling or runtime handeling is Exception
+				//Ama ka marna pa jo awaz ate ha wo Exception  keha la te ha likn agr ama ko aur kut lgane ho to catch lgata hain 
+				
+				catch(Exception ee /*this ee is the variable of Exception */) 
+				
+				 
+				
+				{    //catch started from here
+					
+					// program chlte hua jo msla aye ausa  exception kehta hain
+					//santax main error aye to wo eror kehtala ha 
+					
+				} 
+			
+			}
+		});
+		btnButton7Black.setBackground(Color.BLACK);
+		btnButton7Black.setBounds(359, 30, 33, 187);
+		frame.getContentPane().add(btnButton7Black);
+		
+		JButton btnButton8Black = new JButton("New button");
+		btnButton8Black.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			
+			
+// try stared from here 
+				
+				try {
+				AudioInputStream input  = AudioSystem.
+						getAudioInputStream(new File("C:\\Users\\administrator.ARENA\\Desktop\\Music_Note\\H.wav"));
+				//Clip is they Audio Type
+				Clip c = AudioSystem.getClip(); // this is santax of it will get the audio file 
+				c.open(input);
+				c.start();
+				
+				} // try ended here 
+				
+				
+				
+				
+				// Exception handeling or runtime handeling is Exception
+				//Ama ka marna pa jo awaz ate ha wo Exception  keha la te ha likn agr ama ko aur kut lgane ho to catch lgata hain 
+				
+				catch(Exception ee /*this ee is the variable of Exception */) 
+				
+				 
+				
+				{    //catch started from here
+					
+					// program chlte hua jo msla aye ausa  exception kehta hain
+					//santax main error aye to wo eror kehtala ha 
+					
+				} 
+			
+			
+			
+			}
+		});
+		btnButton8Black.setBackground(Color.BLACK);
+		btnButton8Black.setBounds(439, 30, 33, 187);
+		frame.getContentPane().add(btnButton8Black);
+		
+		JButton btnButton9Black = new JButton("New button");
+		btnButton9Black.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+// try stared from here 
+				
+				try {
+				AudioInputStream input  = AudioSystem.
+						getAudioInputStream(new File("C:\\Users\\administrator.ARENA\\Desktop\\Music_Note\\I.wav"));
+				//Clip is they Audio Type
+				Clip c = AudioSystem.getClip();
+				c.open(input);
+				c.start();
+				
+				} // try ended here 
+				
+				
+				
+				
+				// Exception handeling or runtime handeling is Exception
+				//Ama ka marna pa jo awaz ate ha wo Exception  keha la te ha likn agr ama ko aur kut lgane ho to catch lgata hain 
+				
+				catch(Exception ee /*this ee is the variable of Exception */) 
+				
+				 
+				
+				{    //catch started from here
+					
+					// program chlte hua jo msla aye ausa  exception kehta hain
+					//santax main error aye to wo eror kehtala ha 
+					
+				} 
+			
+			}
+		});
+		btnButton9Black.setBackground(Color.BLACK);
+		btnButton9Black.setBounds(482, 30, 33, 187);
+		frame.getContentPane().add(btnButton9Black);
+		
+		JButton btnButton10Black = new JButton("New button");
+		btnButton10Black.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			
+			
+// try stared from here 
+				
+				try {
+				AudioInputStream input  = AudioSystem.
+						getAudioInputStream(new File("C:\\Users\\administrator.ARENA\\Desktop\\Music_Note\\J.wav"));
+				//Clip is they Audio Type
+				Clip c = AudioSystem.getClip();
+				c.open(input);
+				c.start();
+				
+				} // try ended here 
+				
+				
+				
+				
+				// Exception handeling or runtime handeling is Exception
+				//Ama ka marna pa jo awaz ate ha wo Exception  keha la te ha likn agr ama ko aur kut lgane ho to catch lgata hain 
+				
+				catch(Exception ee /*this ee is the variable of Exception */) 
+				
+				 
+				
+				{    //catch started from here
+					
+					// program chlte hua jo msla aye ausa  exception kehta hain
+					//santax main error aye to wo eror kehtala ha 
+					
+				} 
+			
+			
+			}
+		});
+		btnButton10Black.setBackground(Color.BLACK);
+		btnButton10Black.setBounds(525, 30, 33, 187);
+		frame.getContentPane().add(btnButton10Black);
+		
+		JButton btnNewButton1White = new JButton("New button");
+		btnNewButton1White.setBounds(-3, 0, 46, 376);
+		frame.getContentPane().add(btnNewButton1White);
+		
+		JButton button = new JButton("New button");
+		button.setBounds(40, 0, 46, 376);
+		frame.getContentPane().add(button);
+		
+		JButton button_1 = new JButton("New button");
+		button_1.setBounds(83, 0, 46, 376);
+		frame.getContentPane().add(button_1);
+		
+		JButton button_2 = new JButton("New button");
+		button_2.setBounds(128, 0, 46, 376);
+		frame.getContentPane().add(button_2);
+	}
+}

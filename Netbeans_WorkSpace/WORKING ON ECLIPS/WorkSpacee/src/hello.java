@@ -1,0 +1,86 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Alignment;
+import net.miginfocom.swing.MigLayout;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JRadioButton;
+import javax.swing.JCheckBox;
+import javax.swing.JScrollBar;
+import javax.swing.JSlider;
+import javax.swing.JTextField;
+
+public class hello {
+
+	private JFrame frame;
+	private JTextField txtGivePoints;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					hello window = new hello();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public hello() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(new MigLayout("", "[][][][][][][grow][][][][][]", "[][][][][][][][][][]"));
+		
+		JButton btnOrderIcecream = new JButton("Order Icecream");
+		frame.getContentPane().add(btnOrderIcecream, "cell 6 3");
+		
+		JRadioButton rdbtnOption = new JRadioButton("option1");
+		frame.getContentPane().add(rdbtnOption, "cell 6 4");
+		
+		JCheckBox chckbxLike = new JCheckBox("like");
+		frame.getContentPane().add(chckbxLike, "cell 7 4");
+		
+		JCheckBox chckbxDislike = new JCheckBox("dislike");
+		frame.getContentPane().add(chckbxDislike, "cell 8 4");
+		
+		JRadioButton rdbtnOption_1 = new JRadioButton("option2");
+		frame.getContentPane().add(rdbtnOption_1, "cell 6 5");
+		
+		JCheckBox chckbxLike_1 = new JCheckBox("like");
+		frame.getContentPane().add(chckbxLike_1, "cell 7 5");
+		
+		JCheckBox chckbxDislike_1 = new JCheckBox("dislike");
+		frame.getContentPane().add(chckbxDislike_1, "cell 8 5");
+		
+		txtGivePoints = new JTextField();
+		txtGivePoints.setText("Give points 1-10");
+		frame.getContentPane().add(txtGivePoints, "cell 6 7,growx");
+		txtGivePoints.setColumns(10);
+		
+		JSlider slider = new JSlider();
+		frame.getContentPane().add(slider, "cell 6 8");
+		
+		JScrollBar scrollBar = new JScrollBar();
+		frame.getContentPane().add(scrollBar, "cell 0 0 1 10");
+	}
+
+}

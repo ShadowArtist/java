@@ -1,0 +1,5 @@
+INDEX VERSION 1.130+C:\Users\RehanUsmani\Desktop\Eureka Java Basic Course\Practice\.metadata\.plugins\org.eclipse.jdt.core
+4138876401.index
+2761066074.index
+856875827.index
+1142281125.index

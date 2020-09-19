@@ -1,0 +1,47 @@
+
+public class MethodOverLoading {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println( Add(2,3,1,2) );
+		
+		
+	}
+
+	
+	
+	//this is the simplest example of method over loading
+	
+	//Method ka nam same hona chayia ha Method overloading ka andar tbhe wo methodoverloading kehlye ga 
+
+	
+	
+	
+	public static /*int return type ha  aur return type har method ke same hone chyia ha method overloading ka ander*/   int Add( /*  yehan pa parameter main datatype alg ho skte ha likan      return type same hone chyia ha     */int a , int b)
+	{
+		return a+b;
+	}
+	
+	
+	
+	
+	
+	
+	public static int Add(int a, int b, int c ) {
+		
+		return a+b+c;
+	}
+	
+	
+	
+	public static int Add( int a,int b, int c ,int d  ) {
+		
+		return a+b+c+d;
+	}
+	
+	
+	//method humesha class k ander aye ga chahe wo main class k ander ho ya  huma aus k lia alag class bnane pra 
+	
+	
+}

@@ -1,0 +1,64 @@
+/*
+inheritance has two cases one is (    one parent having many children  )
+
+ dusra case(second case) = aik parent ka child hua , phir aus ka child hua , phir jis ka hua tha child phir aus ka child hua like
+ 
+(second case) =     GrandGrandFather -> GrandFather ->Father ->Son
+ 
+
+*/
+
+
+// second case
+
+
+
+// akhre wale child class ko call krain ga na to sare classes call houn ge 
+
+public class INher {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		C obj1=new C();
+		
+		obj1.Box();
+		obj1.Pen();
+		obj1.Pencil();
+	}
+
+	
+
+	
+
+
+	
+	
+	
+	
+}
+
+
+class A {
+	
+	public void Pen() {
+	System.out.println("this is a pen");	
+	}
+	
+}
+
+class B extends A{
+	
+	public void Pencil() {
+		System.out.println("this is a Pencil");	
+		}
+	
+	
+}
+
+class C extends B{
+	public void Box() {
+		System.out.println("this is a box");	
+		}
+}
+

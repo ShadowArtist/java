@@ -1,0 +1,75 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.GroupLayout;
+import javax.swing.GroupLayout.Alignment;
+import net.miginfocom.swing.MigLayout;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import javax.swing.JRadioButton;
+import javax.swing.JCheckBox;
+
+public class hello {
+
+	private JFrame frame;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					hello window = new hello();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public hello() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(new MigLayout("", "[][][][][][][][][][][]", "[][][][][][][]"));
+		
+		JButton btnClickMe = new JButton("New button");
+		btnClickMe.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			}
+		});
+		frame.getContentPane().add(btnClickMe, "cell 5 3");
+		
+		JRadioButton rdbtnOption = new JRadioButton("option1");
+		frame.getContentPane().add(rdbtnOption, "cell 5 4");
+		
+		JCheckBox chckbxLike = new JCheckBox("like");
+		frame.getContentPane().add(chckbxLike, "cell 6 4");
+		
+		JCheckBox chckbxDislike = new JCheckBox("dislike");
+		frame.getContentPane().add(chckbxDislike, "cell 7 4");
+		
+		JRadioButton rdbtnOption_1 = new JRadioButton("option2");
+		frame.getContentPane().add(rdbtnOption_1, "cell 5 5");
+		
+		JCheckBox chckbxLike_1 = new JCheckBox("like");
+		frame.getContentPane().add(chckbxLike_1, "cell 6 5");
+		
+		JCheckBox chckbxDislike_1 = new JCheckBox("dislike");
+		frame.getContentPane().add(chckbxDislike_1, "cell 7 5");
+	}
+
+}

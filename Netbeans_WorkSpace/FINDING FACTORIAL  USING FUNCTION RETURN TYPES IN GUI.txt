@@ -1,0 +1,129 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class Using_Functions {
+
+	private JFrame frame;
+	private JTextField input;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Using_Functions window = new Using_Functions();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Using_Functions() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		
+		JLabel lblAns = new JLabel("ans");
+		
+		
+		
+		frame = new JFrame();
+		frame.setBounds(100, 100, 184, 310);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		input = new JTextField();
+		input.setBounds(32, 34, 86, 20);
+		frame.getContentPane().add(input);
+		input.setColumns(10);
+		
+		JLabel label = new JLabel("");
+		label.setBounds(10, 246, 46, 14);
+		frame.getContentPane().add(label);
+		
+		JButton btnFactorial = new JButton("Factorial");
+		btnFactorial.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			
+			String output = input.getText();
+			
+		lblAns.setText(String.valueOf(/* here we called the factorial method / function */ factorial( /*apply the method on your variable*/  output) )) ;
+			
+			}
+		});
+		btnFactorial.setBounds(29, 80, 89, 23);
+		frame.getContentPane().add(btnFactorial);
+		
+		
+		lblAns.setBounds(32, 196, 86, 14);
+		frame.getContentPane().add(lblAns);
+	}
+	
+	
+	
+	
+	public static int factorial(String value_1 ) {
+		
+		
+		
+		
+
+		
+		
+		
+		int i = 1; 
+		    
+		
+		
+		
+		
+		int fact=1;
+		
+		
+		
+		
+		
+		// this is the number which we need to find the factorial on  .
+		int converted_value_1 = Integer.parseInt(value_1);
+		
+		
+		
+		
+		while(i<=converted_value_1) {
+			
+			
+			fact = fact * i ; 
+			
+		    i++;
+			
+		}
+		
+		return fact;
+		
+		
+	}
+	
+	
+	
+	
+	
+	
+}

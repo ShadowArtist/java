@@ -1,0 +1,215 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JOptionPane;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class Calculator {
+
+	private JFrame frame;
+	private JTextField textField;
+	private JTextField textField_1;
+	private JTextField textField_2;
+	private JTextField output;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					Calculator window = new Calculator();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public Calculator() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 371, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		textField = new JTextField();
+		textField.setBounds(10, 79, 86, 20);
+		frame.getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		output = new JTextField();
+		output.setBounds(10, 230, 334, 20);
+		frame.getContentPane().add(output);
+		output.setColumns(10);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(129, 79, 86, 20);
+		frame.getContentPane().add(textField_1);
+		textField_1.setColumns(10);
+		
+		textField_2 = new JTextField();
+		textField_2.setBounds(258, 79, 86, 20);
+		frame.getContentPane().add(textField_2);
+		textField_2.setColumns(10);
+		
+		JButton btnCalculate = new JButton("Calculate");
+		btnCalculate.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+			
+			/*
+				try {
+					
+					//		int input_1 = Integer.parseInt(String.valueOf(  textField.getText()   )  ) ;
+							
+							String input_2 =   textField_1.getText();
+							
+						
+							
+					//		int input_3 = Integer.parseInt(String.valueOf(  textField_2.getText()   )  ) ;
+							
+							
+							
+							
+						if( input_2.equals( "+" ) )
+						{
+							
+							// i taked values in string converted them in integer ,performed calculation,then converted back the output by calculation into string
+						
+							int calculate = ( Integer.parseInt(String.valueOf(  textField.getText()   )  )  )  +  ( Integer.parseInt(String.valueOf(  textField_2.getText()   )  ) )  ;
+						
+					output.setText( String.valueOf(calculate));
+						
+						}
+						
+						
+						// i taked values in string converted them in integer ,performed calculation,then converted back the output by calculation into string
+						
+						else if( input_2.equals( "-" ) )
+						{
+							
+						
+							int calculate = ( Integer.parseInt(String.valueOf(  textField.getText()   )  )  )  -  ( Integer.parseInt(String.valueOf(  textField_2.getText()   )  ) )  ;
+						
+					output.setText( String.valueOf(calculate));
+						
+						}
+						
+						
+						// i taked values in string converted them in integer ,performed calculation,then converted back the output by calculation into string
+						
+						else if( input_2.equals( "*" ) )
+						{
+							
+						
+							int calculate = ( Integer.parseInt(String.valueOf(  textField.getText()   )  )  )  *  ( Integer.parseInt(String.valueOf(  textField_2.getText()   )  ) )  ;
+						
+						output.setText( String.valueOf(calculate));
+						
+						}
+						
+						
+						// i taked values in string converted them in integer ,performed calculation,then converted back the output by calculation into string
+						
+						else if( input_2.equals( "/" ) )
+						{
+							
+						
+							double calculate = ( Double.parseDouble(String.valueOf(  textField.getText()   )  )  )  /  ( Double.parseDouble(String.valueOf(  textField_2.getText()   )  ) )  ;
+						
+						output.setText( String.valueOf(calculate));
+						
+						}
+						
+							}
+							
+							
+							
+							catch(Exception e) {
+							JOptionPane.showMessageDialog(btnCalculate, "I am a calculator not Your Toy");
+								
+							}
+						
+			
+				*/
+			
+				
+				
+				
+				calculator whatever = new calculator();
+				
+			
+				
+				//we will define our logic in the output box in which we are taking output
+				
+				output.setText( String.valueOf (	whatever.calculate(Integer.parseInt(String.valueOf(  textField.getText()   )  )   ,    textField_1.getText()     ,   Integer.parseInt(String.valueOf(  textField_2.getText()   )  )   )));
+				
+			}
+			
+			
+			
+			
+			
+			
+		});
+		btnCalculate.setBounds(129, 143, 89, 23);
+		frame.getContentPane().add(btnCalculate);
+	}
+	
+	
+public	class calculator {
+	
+		
+		// method of add
+		public   int calculate(int a ,String operator ,int b) {
+			
+			
+			int calculate=0;
+			
+			if( operator.equals( "+" ) ) {
+			 calculate =a+b;
+			
+			}
+			
+			else if( operator.equals( "-" ) ) {
+				 calculate =a-b;
+			
+			}
+			
+			else if( operator.equals( "*" ) ) {
+				 calculate =a*b;
+				
+			}
+			
+			else if( operator.equals( "/" ) ) {
+				 calculate =a-b;
+				
+			
+			}
+			
+			return calculate;
+			
+			
+		}
+		
+		
+		
+	}	
+
+	
+	
+}

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Factorial_By_User {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner input=new Scanner(System.in);
+		
+		int i=1;
+		int fact=1;
+		
+		System.out.println("Enter your Number for Factorial");
+		
+		int number=input.nextInt();
+		
+		
+		while(i<=number) {
+			fact =fact*i;
+			i++;
+		}
+		System.out.println("Factorials of " +number+ " is : "+fact);
+		
+	}
+
+}

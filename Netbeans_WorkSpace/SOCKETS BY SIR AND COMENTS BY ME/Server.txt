@@ -1,0 +1,107 @@
+//server side
+
+import java.io.BufferedInputStream;
+import java.io.DataInput;
+import java.io.DataInputStream;
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class Mains {
+
+	public static void main(String[] args) {
+		
+		Server s = new  Server(2000);
+		
+
+	}
+
+}
+class Server{
+	// objects bnye hue hain yehan pa likan inatialize nai kia 
+    //yehan pa bne bnye Socket ke class ka object bnyea ha 
+	private Socket            socket   = null; 
+	//yehan pa bne bnye ServerSocket ke class ka object bnyea ha 
+	private ServerSocket      server   = null; 
+	//yehan pa bne bnye DataInputStream ke class ka object bnyea ha 
+	private DataInputStream   in       = null; 
+  
+	
+	
+	
+	//ab aishe class ka constructor bna dia 
+    public Server(int port) 
+    { 
+     
+        try
+        {
+        	//yehan pa object variable ko initialize kr wa dia
+            server = new ServerSocket(port); 
+            System.out.println("Server started"); 
+  
+            System.out.println("Waiting for a client ..."); 
+  
+            socket = server.accept(); //server socket main memory allocate kerna ke zarurat nai the tbhe (new) keyword nai likha
+            System.out.println("Client accepted"); 
+  
+            in = new DataInputStream(  // Data input stream ka ander BufferInputStream ke memory allocate kerwae ha 
+                new BufferedInputStream(socket.getInputStream() ) ); 
+  
+            String line = ""; 
+  
+            while (!line.equals("Over")) 
+            { 
+                try
+                {    
+                	/*Unicode is a superset of ASCII, 
+                	  and the numbers 0–127 have the same meaning in ASCII as they 
+                	  have in Unicode.
+                	  For example, the number 65 means "Latin capital 'A'*/
+                	
+                	/*Reads from the stream in a 
+                	  representation of a Unicode character string encoded
+                	   in modified UTF-8 format, 
+                	  this string of characters is then returned as a String.*/
+                	
+                	
+                	
+                	/*simple zaban main  readUTF  ASCII
+                	 values ko String main 
+                	 convert kerta ha*/
+                	
+                    line = in.readUTF(); 
+                    System.out.println(line); 
+                }
+                
+                //yehan pa ya wala catch ku likha ha
+                catch(IOException i) 
+                
+                { 
+                    System.out.println(i); 
+                } 
+            
+            
+            
+            
+            }
+            
+            
+            
+            System.out.println("Closing connection"); 
+   
+            socket.close(); 
+            in.close(); 
+        } 
+    
+        
+        
+        catch(IOException i) 
+        { 
+            System.out.println(i); 
+        } 
+    
+    
+    
+    
+    }
+}

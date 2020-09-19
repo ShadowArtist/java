@@ -1,0 +1,3 @@
+INDEX VERSION 1.130+C:\Users\RehanUsmani\Desktop\Eureka Java Basic Course\Work Space Only For Sockets  Server and Client\.metadata\.plugins\org.eclipse.jdt.core
+1552460668.index
+3243317939.index

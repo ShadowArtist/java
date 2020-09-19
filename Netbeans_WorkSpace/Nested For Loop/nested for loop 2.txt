@@ -1,0 +1,59 @@
+
+public class Triangle_Pattern {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		
+		for(int i=0;i<=6;i++) {
+			
+			
+			
+			
+			System.out.println();
+			
+			
+			
+			for(int j=1;j<=i;j++) {
+				
+				System.out.print("*");
+				
+			
+			}
+					
+		}
+		
+		
+		
+		
+		// we put gap here because we needed to seperate  column of j from row of k
+		 System.out.println();
+		
+		
+		 
+		 
+		 
+		 
+		 
+		 for(int k=1;k<=5;k++) {
+			
+		       for(int l=5;l>=k;l--) {
+		    	  
+						System.out.print("*");
+						 
+					}
+		       
+		       System.out.println();
+		       
+			}
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+
+}

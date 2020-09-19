@@ -1,0 +1,23 @@
+public class Swapper_Only_Two_Variable {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		int a=6;
+	
+		int b=10;
+		
+		 a = a + b; 
+	        b = a - b; 
+	        a = a - b; 		
+		
+		System.out.println(" value of a "+a + " value of b " +b  );	 
+		
+	    
+	
+		
+		
+		
+	}
+
+}

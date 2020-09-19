@@ -1,0 +1,63 @@
+import java.util.Scanner;
+
+
+
+public class New {
+
+	
+	
+	public static void main(String[] args) {
+		
+		Scanner in = new Scanner(System.in);
+
+		System.out.println("Input username .. ");
+		
+		String n = in.next();
+		
+
+		System.out.println("Input password .. ");
+		String p = in.next();
+		
+		//useage of boolean datatype
+		boolean confirm  = verify(n, p);
+		
+		if(confirm == true) {
+			
+			System.out.println("login successful");
+			
+		}else {
+			
+			System.out.println("something went wrong ...! ");
+			
+			
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	}
+	
+	
+	
+	public static boolean verify(String name , String pass) {
+		
+		if(name.equals("jawad") && pass.equals("0342")) {
+			
+			return true;
+			
+		}
+		return false;
+		
+	
+	}

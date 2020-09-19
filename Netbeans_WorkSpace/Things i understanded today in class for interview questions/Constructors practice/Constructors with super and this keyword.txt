@@ -1,0 +1,43 @@
+public class extend {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		e obj=new e();
+		
+		
+		
+			
+		}
+
+	}
+
+
+class d{
+	
+	int i=9;
+	
+	
+d()	{
+
+	
+	i=89;
+	System.out.println(" parent class constructor "+i);
+
+}
+	
+}
+
+class e extends d {
+int i=87;
+	//constructor 	
+ e()
+ {
+	
+	 
+	 System.out.println(  "inside e constructor  using this  " +this.i);
+	 System.out.println(  "inside e constructor  using super  " +super.i);
+ }
+	
+}

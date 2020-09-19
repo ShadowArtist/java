@@ -1,0 +1,203 @@
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JTextField;
+import javax.swing.JLabel;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+
+public class main_ {
+
+	private JFrame frame;
+	private JTextField textField;
+	private JTextField textField_1;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					main_ window = new main_();
+					window.frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the application.
+	 */
+	public main_() {
+		initialize();
+	}
+
+	/**
+	 * Initialize the contents of the frame.
+	 */
+	private void initialize() {
+		frame = new JFrame();
+		frame.setBounds(100, 100, 450, 300);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.getContentPane().setLayout(null);
+		
+		textField = new JTextField();
+		textField.setBounds(32, 30, 86, 20);
+		frame.getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(270, 30, 86, 20);
+		frame.getContentPane().add(textField_1);
+		textField_1.setColumns(10);
+		
+		JLabel lblAns = new JLabel("ans");
+		lblAns.setBounds(166, 110, 46, 14);
+		frame.getContentPane().add(lblAns);
+		
+		JButton btnMax = new JButton("max");
+		btnMax.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				
+				// aa is just a variable in which we are storing the value of the textField
+				
+				String input_1= textField.getText();
+				String input_2=  textField_1.getText();
+				
+				
+				// we are setting the value of output (lblAns) and as well as converting in same line from calculated integer value to output value in string
+		lblAns.setText(String.valueOf(/*here we had put the max method and converted its value*/ max(input_1, input_2) ) );
+				
+				
+				
+				
+			}
+		});
+		btnMax.setBounds(44, 165, 89, 23);
+		frame.getContentPane().add(btnMax);
+		
+		JButton btnMin = new JButton("min");
+		btnMin.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			
+				String input_1= textField.getText();
+				String input_2=  textField_1.getText();
+				
+				lblAns.setText(String.valueOf(/*here we had put the max method and converted its value*/ min(input_1, input_2) ) );
+				
+			
+			}
+		});
+		btnMin.setBounds(251, 165, 89, 23);
+		frame.getContentPane().add(btnMin);
+		
+		JButton btnAvg = new JButton("avg");
+		btnAvg.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			
+				String input_1= textField.getText();
+				String input_2=  textField_1.getText();
+				
+				
+				lblAns.setText(String.valueOf   (       avg(input_1,input_2)      )  );
+			
+			
+			}
+		});
+		btnAvg.setBounds(140, 215, 89, 23);
+		frame.getContentPane().add(btnAvg);
+	}
+	
+	
+	// it is better to make method function in bottom
+	
+	//function with return type
+	// void = avoid return type
+	
+	// here int is the return type 
+	
+	
+	// String a , String b  ,, are parameters  
+	
+	public static int max (String a , String b) // here we assigned parameters
+	
+	{
+		// we are converting above mentioned String data type into Integer 
+		
+		//c_a = converted value of String a
+		int c_a = Integer.parseInt(a);
+		
+		//c_b = converted value of 
+		int c_b = Integer.parseInt(b);
+		
+		// if this condition is right  return converted value of String a
+		if(c_a > c_b) {
+			
+			return c_a;
+			
+		}else {
+			
+			// it returns the value return type which is int in (public static int  )
+			
+			//else return this 
+			return c_b;
+		}
+		
+			
+	}
+	
+	
+	// method for min
+	public static int min(String a ,String b) {
+		
+		
+		// we are converting above mentioned String data type into Integer 
+		
+				//c_a = converted value of String a
+				int c_a = Integer.parseInt(a);
+				
+				//c_b = converted value of 
+				int c_b = Integer.parseInt(b);
+				
+				//
+				if(c_a < c_b) {
+					
+					return c_a;
+					
+				}else {
+					
+					// it returns the value return type which is int in (public static int  )
+					return c_b;
+				}
+		
+		
+	}
+	
+	// method for average 
+	
+	public static int avg(String a , String b) {
+		
+		
+		//c_a = converted value of String a
+		int c_a = Integer.parseInt(a);
+		
+		//c_b = converted value of 
+		int c_b = Integer.parseInt(b);
+		
+		
+		int avg = (c_a + c_b)/2;
+		
+		
+		// return the value of average 
+		return avg;
+		
+	}
+	
+	
+	
+	
+}
